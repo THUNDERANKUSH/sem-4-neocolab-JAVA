@@ -1,0 +1,19 @@
+import java.util.*;
+class Main{
+        public static void main(String[] args){
+                 Scanner sc= new Scanner(System.in);
+                  int n=sc.nextInt();
+                  int v1=sc.nextInt();
+                  int v2=sc.nextInt();
+                 double  ds =Math.sqrt(2)*n;
+                double  ts=ds/v1;
+                double  de=n+n;
+                double  te=de/v2;
+               if(te<ts){
+                         System.out.println("Elevator");
+               }
+               else{
+                        System.out.println("Stairs");
+               }
+        }
+  }
