@@ -1,0 +1,37 @@
+import java.util.*;
+
+class Main {
+    static int count(int n) {
+        int count = 0;
+        while (n != 0) {
+            count++;
+            n /= 10;
+        }
+        return count;
+    }
+
+    public static void main(String  args[]){
+                Scanner  sc=  new  Scanner(System. in);
+                int  k=sc.nextInt();
+                int  k2=k*k;
+                int  sum, z;
+                int  i=count(k2)/2;
+                int  j=(count(k2)+1)/2;
+                if(count(k2)%2== 0){
+                       z=(int)Math.pow(10,i);
+               }
+               else{
+                  z=(int)Math.pow(10,j);
+             }        
+              int  a=k2/z;
+              int  b=k2%z;
+              sum=a+b;
+                    
+  if(sum==k){
+         System.out.print( "Kaprekar Number");
+}
+  else{
+   System.out.print( "Not  a  Kaprekar  Number" );
+  }
+ }
+}
