@@ -1,0 +1,22 @@
+
+import java.util.*;
+
+class Main {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        if (n > 0) {
+            if (n >= 85) {
+                System.out.print("A");
+            } else if (n < 85 && n >= 75) {
+                System.out.print("B");
+            } else if (n < 75 && n >= 65) {
+                System.out.print("C");
+            } else {
+                System.out.print("D");
+            }
+        } else {
+            System.out.print("Invalid");
+        }
+    }
+}
